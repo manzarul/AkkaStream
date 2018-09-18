@@ -32,7 +32,7 @@ public class App
         final Source<Integer, NotUsed> source = Source.range(0, 100000);
         // now doing the command to source object run as stream and used Akka Materializer obj 
         // this will run in Async once task is completed it will return us CompletionStage
-        BufferedWriter writer = new BufferedWriter11(new FileWriter(new File("prime.txt"),true));
+        BufferedWriter writer = new BufferedWriter(new FileWriter(new File("prime.txt"),true));
         final CompletionStage<Done> done = source.runForeach(i -> { if (isPrime(i)) { System.out.println("primer==" + i);
         writer.write("prime number is== " + i);
         writer.newLine();  
