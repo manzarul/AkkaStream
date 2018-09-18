@@ -7,4 +7,4 @@ cache:
   - "$HOME/.m2"
 notifications:
     slack: sunbird-ci:UegIg4Bf86V3HcXAB2uXNLGI
-      on_failure: always	
+    on_failure: always	
