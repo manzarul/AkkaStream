@@ -29,7 +29,7 @@ public class App
         final Materializer materializer = ActorMaterializer.create(system);
         // generate number between start to end and having difference of 5.
         // it will just generate the Source object
-        final Source<Integer, NotUsed> source = Source.range(0, 1000000);
+        final Source<Integer, NotUsed> source = Source.range(0, 100000);
         // now doing the command to source object run as stream and used Akka Materializer obj 
         // this will run in Async once task is completed it will return us CompletionStage
         BufferedWriter writer = new BufferedWriter(new FileWriter(new File("prime.txt"),true));
