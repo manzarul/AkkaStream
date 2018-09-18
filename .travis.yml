@@ -7,4 +7,11 @@ cache:
   - "$HOME/.m2"
 notifications:
     slack: sunbird-ci:UegIg4Bf86V3HcXAB2uXNLGI
-    on_failure: always	
+    on_success: never
+    on_failure: always
+    email:
+    recipients:
+      - manzarul.haque@tarento.com
+      - manzarul07@gmail.com
+    on_success: never # default: change
+    on_failure: always # default: always
