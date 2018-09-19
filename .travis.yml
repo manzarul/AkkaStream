@@ -10,11 +10,11 @@ notifications:
     on_success: never
     on_failure: always
     email:
-    recipients:
-     - manzarul.haque@tarento.com
-     - manzarul07@gmail.com
-    on_success: never # default: change
-    on_failure: always # default: always
+     recipients:
+      - manzarul.haque@tarento.com
+      - manzarul07@gmail.com
+     on_success: always # default: change
+     on_failure: always # default: always
     irc:
      template:
       - "%{repository_slug}#%{build_number} (%{branch} - %{commit} : %{author}): %{message}"
