@@ -7,12 +7,10 @@ cache:
   - "$HOME/.m2"
 notifications:
    slack: sunbird-ci:UegIg4Bf86V3HcXAB2uXNLGI
-   on_success: always
+   on_success: never
    on_failure: always
    email:
      recipients:
-      - manzarul.haque@tarento.com
-      - amit.kumar@tarento.com
-      - vinayab@ilimi.in
-     on_success: always
+      - manzarul.07@gmail.com
+     on_success: never
      on_failure: always
