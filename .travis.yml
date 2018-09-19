@@ -4,19 +4,19 @@ script:
   - jdk_switcher use openjdk8
 cache:
   directories:
-  - "$HOME/.m2"
+   - "$HOME/.m2"
 notifications:
     slack: sunbird-ci:UegIg4Bf86V3HcXAB2uXNLGI
-    on_success: never
-    on_failure: always
+	 template:
+       - "%{repository_slug}#%{build_number} (%{branch} - %{commit} : %{author}): %{message}"
+       - "Change view : %{compare_url}"
+       - "Build details : %{build_url}" 
+     on_success: always
+     on_failure: always
     email:
      recipients:
       - manzarul.haque@tarento.com
-      - manzarul07@gmail.com
-     on_success: always # default: change
-     on_failure: always # default: always
-    irc:
-     template:
-      - "%{repository_slug}#%{build_number} (%{branch} - %{commit} : %{author}): %{message}"
-      - "Change view : %{compare_url}"
-      - "Build details : %{build_url}" 
+      - amit.kumar@tarento.com
+	  - vinayab@ilimi.in
+     on_success: always
+     on_failure: always
