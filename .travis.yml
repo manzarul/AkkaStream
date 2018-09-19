@@ -4,7 +4,7 @@ script:
   - jdk_switcher use openjdk8
 cache:
   directories:
-    - "$HOME/.m2"
+  - "$HOME/.m2"
 notifications:
    slack: sunbird-ci:UegIg4Bf86V3HcXAB2uXNLGI
      template:
