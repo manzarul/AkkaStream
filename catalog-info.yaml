@@ -6,5 +6,5 @@ metadata:
     github.com/project-slug: manzarul/AkkaStream
 spec:
   type: other
-  lifecycle: unknown
+  lifecycle: Exprimental
   owner: guests
